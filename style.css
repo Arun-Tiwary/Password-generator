@@ -1,0 +1,92 @@
+@import url("font-family: 'Playfair Display SC', serif;");
+
+
+
+
+
+
+body{
+    font-family: 'Public Sans', sans-serif;
+
+    background : linear-gradient(225deg, #1623A6 0%, #3343D4 0%, #175EAC 7%, #176682 100%);
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    min-height: 100vh;
+    
+}
+
+.pw-container{
+    background: linear-gradient(to right top, #604C7C 0%, #257983 50%, #20825A 100%);
+    box-shadow:0 4px 10px;
+    width: 450px;
+}
+
+.pw-header{
+   padding: 1rem;
+}
+.pw{
+    width: 93%;
+    font-size: 2rem;
+    align-items: center;
+    height: 70px;
+    background-color:#176682;
+    display: flex;
+    position: relative;
+    padding: 1rem;
+    ;
+}
+
+.pw button{
+position: absolute;
+border: none;
+transform: translate(0%,-50%);
+background-color:#176682 ;
+color: white;
+font-weight: bold;
+font-family: inherit;
+cursor: pointer;
+top:0;
+right:0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+opacity: 0;
+}
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0,-80%);
+    color: red;
+}
+
+.pw-body{
+padding: 1rem;;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+.generate{
+    display: block;
+    border:none;
+    background-color: orange;
+    color: purple;
+   width:100%;
+   padding: 1rem;
+   margin-top: 1rem;
+   outline-color: red;
+   font-weight: bold;
+
+}
+#Length{
+
+    max-width: 10%;
+    outline:none;
+}
+
+h1{
+    font:bold;
+    padding: 0rem 1rem;
+}
