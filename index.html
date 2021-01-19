@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password-generator</title>
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     
@@ -13,15 +14,15 @@
         <div class="pw-header">
 
             <div class="pw" id="pw">
-                <button id="cop">Copy</button>skdvdskvjgvkh
+                <button id="copy">Copy</button>
             </div>
         </div>
         
        <div class="pw-body">
 
         <div class="form-control">
-            <label for="Length">Password Length</label>
-            <input id="Length" type="input" min="4" max="40">
+            <label for="Length">Password Length</label>(min 4 charset)
+            <input id="len" type="number" min="4" max="40" value="4">
             </div>
 
     <div class="form-control">
@@ -35,12 +36,12 @@
         </div>
  <div class="form-control">
     <label for="numbers">Contain Numbers</label>
-    <input id="numbers" type="checkbox">
+    <input id="number" type="checkbox">
     </div>
 
     <div class="form-control">
         <label for="symbols">Contain Symbols</label>
-        <input id="symbols" type="checkbox">
+        <input id="symbol" type="checkbox">
         </div>
 
 <button class="generate" id="generate">GENERATE PASSWORD</button>
@@ -48,5 +49,7 @@
         </div>
 
     </div>
+
+    
 </body>
 </html>
